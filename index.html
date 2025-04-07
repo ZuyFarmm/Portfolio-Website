@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/37356f4064.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo-duy.jpg" class = "logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Prortfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Designer</p>
+            <h1>Hi, I'm Duy <span>Pham</span><br> from Ho Chi Minh City</h1>
+        </div>
+    </div>
+</div>
+   <!-- --------------About------------- -->
+<div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/about-duy.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a junior Software Engineering student eager to apply my knowledge in a professional setting. Passionate about technology and problem-solving, 
+                        I seek a role that fosters growth and innovation while allowing me to contribute meaningfully.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id = "skills">
+                        <ul>
+                            <li><span>Frontend</span>
+                                <br>HTML, CSS (SCSS), JavaScript
+                                <br>BootStrap 4, ReactJS, Tailwind CSS
+                            </li>
+                            <li><span>Backend</span>
+                                <br>JavaScript, PHP, Java, C/C++, Python
+                                <br>Node.JS (Express), Spring Boot
+                            </li>
+                            <li><span>Others</span>
+                                <br>Able to effectively understand documents and converse in English
+                                <br>Git, Figma
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "experience">
+                        <ul>
+                            <li><span>03/2023 – 04/2023</span>
+                                <br>PORTFOLIO WEBSITE
+                                <br>A fully responsive personal portfolio showcasing projects, skills, and experiences.
+                            </li>
+                            <li><span>02/2024 – 05/2024</span>
+                                <br>ADVISOR WEB APP
+                                <br>Build a Learning management system for teaching and studying
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id ="education">
+                        <ul>
+                            <li><span>08/2022 – present</span>
+                                <br>HO CHI MINH CITY UNIVERSITY OF TECHNOLOGY
+                                <br>Junior Student in Software Engineering
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------sevices-------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Creating the visual elements and layout of a website</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Create great experiences for users when interacting with products on digital platforms.</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Design the functional characteristics of transactions and applications that will run on a database system</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------portfolio------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="Images/hotel.png" alt="">
+                <div class="layer">
+                    <h3>Hotel Management System</h3>
+                    <p>A software solution designed to 
+                        streamline and automate various operations within a hotel or 
+                        hospitality business.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Images/SSPS.png" alt="">
+                <div class="layer">
+                    <h3>Smart Printing System</h3>
+                    <p>This system integrates various printers throughout the university,
+                        allowing students to print their documents with flexibility and convenience</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Images/advisor.png" alt="">
+                <div class="layer">
+                    <h3>Student Advisor Webapp</h3>
+                    <p>Learning management system for teaching and studying</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ------------contact--------------- -->
+<div id="contact">
+    <div class="container">
+      <h2 class="sub-title">Contact Me</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p><i class="fa-solid fa-envelope"></i> phamduy11112004@gmail.com</p>
+          <p><i class="fa-solid fa-phone-volume"></i> 0364694790</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/zuyfarmm" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/_zuyy_farmm41/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:phamduy11112004@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="contact-btn">
+          <a href="Images/Pham-Phuong-Duy-FlowCV-Resume-20250407.pdf" download class="btn btn2">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+     var sidemeu = document.getElementById("sidemenu")
+     function openmenu(){
+        sidemeu.style.right = "0";
+     }
+     function closemenu(){
+        sidemeu.style.right = "-200px";
+     }
+</script>
+
+</body>
+</html>
